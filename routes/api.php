@@ -20,3 +20,4 @@ use Illuminate\Support\Facades\Route;
 // });
 
 Route::post('/create-product',[ProductController::class, 'create']);
+Route::get('/products', [ProductController::class, 'getData']);

@@ -18,4 +18,12 @@ class ProductController extends Controller
             'message' => 'data berhasil ditambahkan'
         ]);
     }
+
+    public function getData()
+    {
+        $products = Product::all();
+        return response()->json([
+            'products' => $products
+        ]);
+    }
 }
